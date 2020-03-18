@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Default Gallery">
+		<message>
+			A link to already created gallery.
+		</message>
+	</layout>
+		
+		<fields name="params">
+		<fieldset name="basic" addfieldpath="components/com_fadegallery/fields">
+			
+			
+	        <field type="fadegallery" name="galleryid" default="" label="Select Gallery" description="Select Gallery" />
+			
+		</fieldset>
+		
+		</fields>
+		
+
+	
+</metadata>

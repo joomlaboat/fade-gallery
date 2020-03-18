@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade" client="site">
+	
+    <name>Content - Fade Gallery</name>
+    <author>DesignCompass corp</author>
+    <creationDate>September 2012</creationDate>
+    <copyright>Copyright (C) 2010 DesignCompassCorp. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://www.designcompasscorp.com/</authorUrl>
+    <version>1.4.7</version>
+    <description>FADEGALLERYDESCRIPTION</description>
+    <files>
+        <filename plugin="fadegallery">fadegallery.php</filename>
+		<filename>index.html</filename>
+    </files>
+	<languages>
+      <language tag="en-GB">language/en-GB/en-GB.plg_content_fadegallery.ini</language>
+    </languages>
+</extension>

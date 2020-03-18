@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site"  method="upgrade">
+	
+    <name>Fade Gallery</name>
+    <author>DesignCompass corp</author>
+    <creationDate>September 2012</creationDate>
+    <copyright>Copyright (C) 2010-2012 DesignCompassCorp. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>admin@designcompasscorp.com</authorEmail>
+    <authorUrl>http://www.designcompasscorp.com/</authorUrl>
+    <version>1.4.7</version>
+    <description>MOD_FADEGALLERY_DESCRIPTION</description>
+    <files>
+        <filename module="mod_fadegallery">mod_fadegallery.php</filename>
+		<filename>mod_fadegallery.xml</filename>
+
+    </files>
+	
+	<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="components/com_fadegallery/fields">
+			
+		<field type="fadegalleryoptional" name="galleryid" default="0" label="MOD_FADEGALLERY_SELECT_LABEL" description="MOD_FADEGALLERY_SELECT_DESC" />
+		<field type="spacer" />
+		
+        <field name="folder" type="text" default="images" label="MOD_FADEGALLERY_FIELD_FOLDER_LABLE" />
+        <field name="width" type="text" default="320" label="MOD_FADEGALLERY_FIELD_WIDTH_LABLE" />
+        <field name="height" type="text" default="240" label="MOD_FADEGALLERY_FIELD_HEIGHT_LABLE" />
+        <field name="interval" type="text" default="6000" label="MOD_FADEGALLERY_FIELD_INTERVAL_LABLE" description="MOD_FADEGALLERY_FIELD_INTERVAL_DESC" />
+        <field name="fadetime" type="text" default="2000" label="MOD_FADEGALLERY_FIELD_FADE_TIME_LABLE" />
+        <field name="fadestep" type="text" default="20" label="MOD_FADEGALLERY_FIELD_FADESTEP_LABLE" />
+        <field name="cssstyle" type="textarea" cols="60" rows="5" default="" label="MOD_FADEGALLERY_FIELD_CSS_STYLE_LABEL" description="MOD_FADEGALLERY_FIELD_CSS_STYLE_DESC" />
+        
+		<field name="randomize" type="radio" default="0" label="MOD_FADEGALLERY_FIELD_RANDOMIZE_LABLE" description="MOD_FADEGALLERY_FIELD_RANDOMIZE_DESC" >
+			<option value="0">MOD_FADEGALLERY_NO</option>
+			<option value="1">MOD_FADEGALLERY_YES</option>
+		</field>
+		
+		<field name="thelink" type="text" default="" label="MOD_FADEGALLERY_FIELD_LINK_LABLE" description="MOD_FADEGALLERY_FIELD_LINK_DESC" />
+		
+		<field name="linktarget" type="list" default="0" label="MOD_FADEGALLERY_FIELD_LINKTARGET_LABLE" description="" >
+			<option value="_top">MOD_FADEGALLERY_FIELD_LINKTARGET_TOP</option>
+			<option value="_blank">MOD_FADEGALLERY_FIELD_LINKTARGET_BLANK</option>
+		</field>
+			
+		</fieldset>
+	</fields>
+	
+	</config>
+	<languages>
+        <language tag="en-GB">language/en-GB.mod_fadegallery.ini</language>
+        <language tag="en-GB">language/en-GB.mod_fadegallery.sys.ini</language>
+    </languages>
+</extension>
+	
