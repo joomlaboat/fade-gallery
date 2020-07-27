@@ -1,19 +1,18 @@
 <?php
 /**
-* Fade Javascript Image Gallery Joomla! 2.5/2.5 Native Component
-* @version 1.4.7
-* @author DesignCompassCorp <admin@designcompasscorp.com>
-* @link http://www.designcompasscorp.com
+* Fade Javascript Image Gallery Joomla! 3.0/2.5 Native Component
+* @version 1.5.3
+* @author Ivan Komlev <support@joomlaboat.com>
+* @link http://www.joomlaboat.com
 * @license GNU/GPL **/
+
 defined('_JEXEC') or die('Restricted access');
 
 jimport('joomla.plugin.plugin');
 //$mainframe->registerEvent('onPrepareContent', 'plgContentFadeGallery');
 
-
 class plgContentFadeGallery extends JPlugin
 {
-	
 
 	public function onContentPrepare($context, &$article, &$params, $limitstart=0)
 	{
@@ -34,7 +33,7 @@ class plgContentFadeGallery extends JPlugin
 		for($i=0; $i<count($fList);$i++)
 		{
 			$replaceWith=$this->getFadeGallery($options[$i],$i);
-			$text_original=str_replace($fList[$i],$replaceWith,$text_original);	
+			$text_original=str_replace($fList[$i],$replaceWith,$text_original);
 		}
 	
 		return count($fList);
@@ -50,7 +49,7 @@ class plgContentFadeGallery extends JPlugin
 		for($i=0; $i<count($fList);$i++)
 		{
 			$replaceWith=$this->getFadeGalleryByID($options[$i],$i);
-			$text_original=str_replace($fList[$i],$replaceWith,$text_original);	
+			$text_original=str_replace($fList[$i],$replaceWith,$text_original);
 		}
 	
 		return count($fList);
@@ -165,7 +164,7 @@ function getFadeGallery($galleryparams,$count)
 	if(count($fg_images)<1)
 		return '';
 
-	$mydoc =& JFactory::getDocument();
+	$mydoc = JFactory::getDocument();
 	$global_alt=$mydoc->getTitle();
 
 	require_once(JPATH_SITE.DS.'components'.DS.'com_fadegallery'.DS.'includes'.DS.'fadegalleryani.php');
@@ -230,7 +229,3 @@ function getListToReplace($par,&$options,&$text)
 		return $text ;
 	}
 }
-
-
-
-?>
