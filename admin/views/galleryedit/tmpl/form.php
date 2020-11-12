@@ -1,15 +1,13 @@
 <?php
 /**
-* Fade Javascript Image Gallery Joomla! 2.5 Native Component
-* @version 1.4.7
-* @author DesignCompass corp <admin@designcompasscorp.com>
-* @link http://www.designcompasscorp.com
-* @license GNU/GPL **/
-
+ * Fade Javascript Image Gallery Joomla! 2.5 Native Component
+ * @author Ivan komlev <support@joomlaboat.com>
+ * @link http://www.joomlaboat.com
+ * @copyright Copyright (C) 2018-2020. All Rights Reserved
+ * @license GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+*/
 
 defined('_JEXEC') or die('Restricted access');
-
-
 ?>
 
 
@@ -37,7 +35,7 @@ defined('_JEXEC') or die('Restricted access');
 		<div style="position: relative;">
 		<div style="position: absolute; right:0">
 		
-		<a href="http://extensions.designcompasscorp.com/index.php/fade-gallery" target="_blank"><img src="../components/com_fadegallery/images/compasslogo.png" border="0" align="right"></a>
+		<a href="http://joomlaboat.com/fade-gallery" target="_blank"><img src="../components/com_fadegallery/images/compasslogo.png" border="0" align="right"></a>
 		
 		</div>
 		<legend><?php echo JText::_( 'COM_FADEGALLERY_DETAILS' ); ?></legend>
@@ -299,7 +297,7 @@ defined('_JEXEC') or die('Restricted access');
 		</div>
 		
 	</fieldset>
-	<p style="text-align: left;"><a href="http://extensions.designcompasscorp.com/index.php/fade-gallery/logo-free-fade-gallery" target="_blank">
+	<p style="text-align: left;"><a href="http://joomlaboat.com/fade-gallery/logo-free-fade-gallery" target="_blank">
 	<?php echo JText::_( 'COM_FADEGALLERY_TAKE_LOGO_OFF' ); ?>
 	
 	</a></p>

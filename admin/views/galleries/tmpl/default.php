@@ -1,3 +1,12 @@
+<?php
+/**
+ * Fade Gallery Javascript Image Gallery Joomla! 2.5 Native Component
+ * @author Ivan komlev <support@joomlaboat.com>
+ * @link http://www.joomlaboat.com
+ * @copyright Copyright (C) 2018-2020. All Rights Reserved
+ * @license GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
 <?php defined('_JEXEC') or die('Restricted access'); ?>
 
 <form action="index.php" method="post" name="adminForm">
@@ -105,7 +114,7 @@
 	<?php echo JHTML::_( 'form.token' ); ?>
 </form>
 
-<p style="text-align: left;"><a href="http://extensions.designcompasscorp.com/index.php/fade-gallery/510" target="_blank">
+<p style="text-align: left;"><a href="http://joomlaboat.com/fade-gallery" target="_blank">
 	<?php echo JText::_( 'COM_FADEGALLERY_TAKE_LOGO_OFF' ); ?>
 	
 </a></p>

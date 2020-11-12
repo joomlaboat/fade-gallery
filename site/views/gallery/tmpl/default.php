@@ -1,11 +1,11 @@
 <?php
 /**
  * FadeGallery Joomla! 2.5 Native Component
- * @version 1.4.7
- * @author DesignCompass corp< <admin@designcompasscorp.com>
- * @link http://www.designcompasscorp.com
- * @license GNU/GPL
- **/
+ * @author Ivan komlev <support@joomlaboat.com>
+ * @link http://www.joomlaboat.com
+ * @copyright Copyright (C) 2018-2020. All Rights Reserved
+ * @license GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+*/
 
 // no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -57,6 +57,3 @@ if($galleryrow->folder!='')
 	
 	}
 }
-
-
-?>
