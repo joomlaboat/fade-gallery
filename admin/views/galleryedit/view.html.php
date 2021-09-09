@@ -9,8 +9,6 @@
 
 defined('_JEXEC') or die('Restricted access');
 
-
-
 // Import Joomla! libraries
 jimport( 'joomla.application.component.view');
 class FadeGalleryViewGalleryEdit extends JView
@@ -20,14 +18,13 @@ class FadeGalleryViewGalleryEdit extends JView
 		$mainframe = JFactory::getApplication();
 		
 
-		$row =& $this->get('Data');
+		$this->row = $this->get('Data');
 
-		$this->assignRef('tableid',	$row->id);
+		$this->tableid = $row->id;
 		
 		
-		$isNew= ($row->id < 1);
-		$this->assignRef('isNew',$isNew);
-
+		$this->isNew = ($row->id < 1);
+		
 		$text = $isNew ? JText::_( 'NEW' ) : JText::_( 'EDIT' );
 		
 		JToolBarHelper::title(JText::_( 'Fade Gallery').': <small><small>[ '. $text.' ]</small></small>', 'generic.png' );
@@ -44,13 +41,7 @@ class FadeGalleryViewGalleryEdit extends JView
 		JHTML::_('behavior.tooltip');
 
 
-		$Model =& $this->getModel();
-		$this->assignRef('Model',		$Model);
-		
-    
-       	$this->assignRef('row',$row);
-		
-		
+		$this->Model = $this->getModel();
 		
         parent::display($tpl);
     }

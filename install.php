@@ -53,7 +53,7 @@ class com_FadeGalleryInstallerScript
                     $columnType='plugin'"
             );
             
-            $db->query();
+            $db->execute();
             
 			echo '<p>' . JText::_('COM_FADEGALLERY_INSTALL_TEXT') . '</p>';
 			

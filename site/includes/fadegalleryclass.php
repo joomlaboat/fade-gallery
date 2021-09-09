@@ -371,7 +371,6 @@ $result.='
 		$query='SELECT `id` FROM #__fadegallery WHERE `galleryname`="'.$galleryname.'" LIMIT 1';
 		
 		$db->setQuery($query);
-		if (!$db->query())    echo ( $db->stderr());
 		
 		$rows = $db->loadObjectList();
 		
@@ -389,7 +388,6 @@ $result.='
 		$query='SELECT * FROM #__fadegallery WHERE `id`='.(int)$galleryid.' LIMIT 1';
 		
 		$db->setQuery($query);
-		if (!$db->query())    echo ( $db->stderr());
 		
 		$rows = $db->loadObjectList();
 		

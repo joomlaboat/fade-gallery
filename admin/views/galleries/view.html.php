@@ -15,10 +15,7 @@ class FadeGalleryViewGalleries extends JView
 {
     function display($tpl = null)
     {
-
 		$mainframe = JFactory::getApplication();
-				
-		
 
 		JToolBarHelper::title(JText::_('COM_FADEGALLERY_GALLERYLIST'), 'generic.png');
 		
@@ -59,14 +56,11 @@ class FadeGalleryViewGalleries extends JView
 		. $where
 		;
 		$db->setQuery( $query );
-		if (!$db->query())    echo ( $db->stderr());
+
 		$total = $db->loadResult();
 		
-		//echo $total;
-		//echo 'total='.$total;exit;
-
 		jimport('joomla.html.pagination');
-		$pageNav = new JPagination( $total, $limitstart, $limit );
+		$this->pagination = new JPagination( $total, $limitstart, $limit );
 
 		$query = 'SELECT s.* FROM #__fadegallery AS s '
 		. $where 
@@ -74,21 +68,16 @@ class FadeGalleryViewGalleries extends JView
 		;
 
 		
-		$db->setQuery($query, $pageNav->limitstart, $pageNav->limit );
-		if (!$db->query())    echo ( $db->stderr());
-		$rows = $db->loadObjectList();
+		$db->setQuery($query, $this->pagination->limitstart, $this->pagination->limit );
+
+		$this->items = $db->loadObjectList();
 
 		$javascript		= 'onchange="document.adminForm.submit();"';
 
 		$lists['order_Dir']	= $filter_order_Dir;
 		$lists['order']		= $filter_order;
 
-		// search filter
-		$lists['search']= $search;
-
-		$this->assignRef('items',		$rows);
-		$this->assignRef('pagination',		$pageNav);
-		$this->assignRef('lists',		$lists);
+		$this->lists['search']= $search;
 
 		parent::display($tpl);
     }

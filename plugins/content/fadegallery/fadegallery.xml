@@ -9,7 +9,7 @@
     <authorEmail>support@joomlaboat.com</authorEmail>
     <authorUrl>http://www.joomlaboat.com/</authorUrl>
     <version>1.5.3</version>
-    <description>FADEGALLERYDESCRIPTION</description>
+    <description>PLG_CONTENT_FADEGALLERY_TAB_DESCRIPTION</description>
     <files>
         <filename plugin="fadegallery">fadegallery.php</filename>
 		<filename>index.html</filename>

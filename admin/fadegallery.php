@@ -10,8 +10,8 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-
-$controllerName = JRequest::getCmd( 'controller', 'galleries' );
+$jinput = JFactory::getApplication()->input;
+$controllerName = $jinput->getCmd( 'controller', 'galleries' );
 
 
 switch($controllerName)
@@ -28,7 +28,7 @@ switch($controllerName)
 		JSubMenuHelper::addEntry(JText::_('COM_FADEGALLERY_DOCS'), 'index.php?option=com_fadegallery&controller=docs', false);
 		break;
 }
-require_once( JPATH_COMPONENT.DS.'controllers'.DS.$controllerName.'.php' );
+require_once( JPATH_COMPONENT.DIRECTORY_SEPARATOR.'controllers'.DIRECTORY_SEPARATOR.$controllerName.'.php' );
 
 
 $controllerName = 'FadeGalleryController'.$controllerName;

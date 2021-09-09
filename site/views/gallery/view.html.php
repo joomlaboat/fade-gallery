@@ -15,15 +15,8 @@ class FadeGalleryViewGallery extends JView {
 
 	function display($tpl = null)
 	{
-		
-		//$params = &JComponentHelper::getParams( 'com_fadegallery' );
 		$app		= JFactory::getApplication();
-		$params=$app->getParams();
-			
-		$this->assignRef('params',$params);
-		
-				
+		$this->params=$app->getParams();
         parent::display($tpl);
 	}
-	
 }
