@@ -11,7 +11,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 
-<script language="javascript" type="text/javascript">
+<script>
 	function submitbutton(pressbutton) {
 		var form = document.adminForm;
 		if (pressbutton == 'cancel') {

@@ -56,7 +56,7 @@ foreach($fg_images as $i)
 //	var '.$fadegallery_name.'_fg_loaded=0;
 
 $result.='
-<script language="javascript" type="text/javascript">
+<script>
 //<![CDATA[
 
 	var '.$fadegallery_name.'_fadegallery_images=new Array ("'.implode('","',$theimages).'");
